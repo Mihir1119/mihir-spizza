@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihir's Pizza</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ICON -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <!-- LOGO -->
+        <div class="logo">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" alt="">
+
+            <h2>Mihir's Pizza</h2>
+
+        </div>
+
+
+        <!-- DELIVERY PICKUP DINEIN -->
+
+        <div class="nav-center">
+
+            <button class="nav-btn active" onclick="changeActive(this)">
+                Delivery
+            </button>
+
+            <button class="nav-btn" onclick="changeActive(this)">
+                Pickup
+            </button>
+
+            <button class="nav-btn" onclick="changeActive(this)">
+                Dine In
+            </button>
+
+        </div>
+
+
+        <!-- LOGIN -->
+
+        <!-- LOGIN -->
+
+<div class="user-box">
+
+    <div class="user-icon">
+        <i class="fa-regular fa-user"></i>
+    </div>
+
+</div>
+
+    </nav>
+
+
+    <!-- ================= HERO SLIDER ================= -->
+
+    <section class="hero">
+
+        <div class="slider">
+
+            <!-- SLIDE 1 -->
+
+            <div class="slide active">
+
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070&auto=format&fit=crop"
+                    alt="">
+
+                <div class="overlay"></div>
+
+                <div class="content">
+
+                    <h1>International Pizza Festival</h1>
+
+                    <p>
+                        Enjoy delicious cheesy pizzas with exciting flavours from around the world.
+                    </p>
+
+                    <button>Order Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SLIDE 2 -->
+
+            <div class="slide">
+
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=2081&auto=format&fit=crop"
+                    alt="">
+
+                <div class="overlay"></div>
+
+                <div class="content">
+
+                    <h1>Hot & Fresh Everyday</h1>
+
+                    <p>
+                        Loaded toppings, crispy crust and fresh ingredients in every bite.
+                    </p>
+
+                    <button>Explore Menu</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SLIDE 3 -->
+
+            <div class="slide">
+
+                <img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?q=80&w=1974&auto=format&fit=crop"
+                    alt="">
+
+                <div class="overlay"></div>
+
+                <div class="content">
+
+                    <h1>Cheese Loaded Pizza</h1>
+
+                    <p>
+                        Experience ultimate cheesy goodness with delicious combos and offers.
+                    </p>
+
+                    <button>Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- DOTS -->
+
+            <div class="dots">
+
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= OFFERS SECTION ================= -->
+
+<section class="offers-section">
+
+    <div class="section-title">
+        
+        <h2>Offers for you</h2>
+        <a href="menu.html" class="menu-btn">
+        View Full Menu
+    </a>
+
+
+    </div>
+
+    <div class="offers-scroll">
+
+        <!-- OFFER 1 -->
+
+        <div class="offer-card">
+
+            <div class="offer-left">
+
+                <div class="offer-icon">%</div>
+
+                <div>
+                    <h3>Get ₹30 OFF</h3>
+                    <p>On orders above ₹199</p>
+                </div>
+
+            </div>
+
+            <button>View</button>
+
+        </div>
+
+
+        <!-- OFFER 2 -->
+
+        <div class="offer-card">
+
+            <div class="offer-left">
+
+                <div class="offer-icon">🔥</div>
+
+                <div>
+                    <h3>Flat ₹100 OFF</h3>
+                    <p>Weekend special offer</p>
+                </div>
+
+            </div>
+
+            <button>View</button>
+
+        </div>
+
+
+        <!-- OFFER 3 -->
+
+        <div class="offer-card">
+
+            <div class="offer-left">
+
+                <div class="offer-icon">🎉</div>
+
+                <div>
+                    <h3>Free Garlic Bread</h3>
+                    <p>On combo orders</p>
+                </div>
+
+            </div>
+
+            <button>View</button>
+
+        </div>
+
+
+        <!-- OFFER 4 -->
+
+        <div class="offer-card">
+
+            <div class="offer-left">
+
+                <div class="offer-icon">🍕</div>
+
+                <div>
+                    <h3>Buy 1 Get 1</h3>
+                    <p>On medium pizzas</p>
+                </div>
+
+            </div>
+
+            <button>View</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="category-section">
+
+    <div class="section-title">
+        
+        <h2>Categories</h2>
+        <a href="menu.html" class="menu-btn">
+        View Full Menu
+    </a>
+
+
+    </div>
+
+    <div class="category-scroll">
+
+
+        <!-- CATEGORY -->
+
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png" alt="">
+            <h4>Veg Pizza</h4>
+        </div>
+
+
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/6978/6978255.png" alt="">
+            <h4>Cheese Burst</h4>
+        </div>
+
+
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5787/5787016.png" alt="">
+            <h4>Pizza Mania</h4>
+        </div>
+
+
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3595/3595458.png" alt="">
+            <h4>Garlic Bread</h4>
+        </div>
+
+
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2515/2515183.png" alt="">
+            <h4>Desserts</h4>
+        </div>
+
+
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" alt="">
+            <h4>Recommended</h4>
+        </div>
+
+
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="">
+            <h4>Combo Meals</h4>
+        </div>
+
+
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3480/3480823.png" alt="">
+            <h4>Tacos</h4>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= BEST SELLERS ================= -->
+
+<section class="best-seller-section">
+
+    <!-- TITLE -->
+
+    <div class="section-title">
+
+        <h2>Best Sellers</h2>
+        <a href="menu.html" class="menu-btn">
+        View Full Menu
+    </a>
+
+
+    </div>
+
+
+
+    <!-- SCROLL AREA -->
+
+    <div class="best-seller-scroll">
+
+
+        <!-- CARD 1 -->
+
+        <div class="food-card">
+
+            <div class="food-img">
+
+                <span class="discount">20% OFF</span>
+
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070&auto=format&fit=crop"
+                    alt="">
+
+            </div>
+
+
+            <div class="food-content">
+
+                <div class="food-top">
+
+                    <h3>Cheese Burst Pizza</h3>
+
+                </div>
+
+                <p>
+                    Loaded with extra cheese and fresh toppings.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <h4>₹249</h4>
+
+                    <button>Add</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 2 -->
+
+        <div class="food-card">
+
+            <div class="food-img">
+
+                <span class="discount">15% OFF</span>
+
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=2081&auto=format&fit=crop"
+                    alt="">
+
+            </div>
+
+
+            <div class="food-content">
+
+                <div class="food-top">
+
+                    <h3>Veg Supreme Pizza</h3>
+
+                </div>
+
+                <p>
+                    Crispy crust with delicious vegetable toppings.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <h4>₹299</h4>
+
+                    <button>Add</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 3 -->
+
+        <div class="food-card">
+
+            <div class="food-img">
+
+                <span class="discount">10% OFF</span>
+
+                <img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?q=80&w=1974&auto=format&fit=crop"
+                    alt="">
+
+            </div>
+
+
+            <div class="food-content">
+
+                <div class="food-top">
+
+                    <h3>Farmhouse Pizza</h3>
+
+                </div>
+
+                <p>
+                    Loaded with farm fresh veggies and cheese.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <h4>₹349</h4>
+
+                    <button>Add</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 4 -->
+
+        <div class="food-card">
+
+            <div class="food-img">
+
+                <span class="discount">25% OFF</span>
+
+                <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=1974&auto=format&fit=crop"
+                    alt="">
+
+            </div>
+
+
+            <div class="food-content">
+
+                <div class="food-top">
+
+                    <h3>Paneer Tikka Pizza</h3>
+
+                </div>
+
+                <p>
+                    Spicy paneer tikka with creamy mozzarella.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <h4>₹399</h4>
+
+                    <button>Add</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 5 -->
+
+        <div class="food-card">
+
+            <div class="food-img">
+
+                <span class="discount">18% OFF</span>
+
+                <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1974&auto=format&fit=crop"
+                    alt="">
+
+            </div>
+
+
+            <div class="food-content">
+
+                <div class="food-top">
+
+                    <h3>Mexican Pizza</h3>
+
+                </div>
+
+                <p>
+                    Spicy mexican flavours with crispy base.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <h4>₹329</h4>
+
+                    <button>Add</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 6 -->
+
+        <div class="food-card">
+
+            <div class="food-img">
+
+                <span class="discount">30% OFF</span>
+
+                <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=1974&auto=format&fit=crop"
+                    alt="">
+
+            </div>
+
+
+            <div class="food-content">
+
+                <div class="food-top">
+
+                    <h3>Margherita Pizza</h3>
+
+                </div>
+
+                <p>
+                    Classic cheese pizza with rich tomato sauce.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <h4>₹199</h4>
+
+                    <button>Add</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+    <!-- JS -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>

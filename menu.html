@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mihir's Pizza</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png">
+
+            <h2>Mihir's Pizza</h2>
+
+        </div>
+
+
+
+        <div class="nav-center">
+
+            <button class="nav-btn active">
+                Delivery
+            </button>
+
+            <button class="nav-btn">
+                Pickup
+            </button>
+
+            <button class="nav-btn">
+                Dine In
+            </button>
+
+        </div>
+
+
+
+        <div class="user-icon">
+
+            <i class="fa-regular fa-user"></i>
+
+        </div>
+
+    </header>
+
+
+
+
+    <!-- ================= FILTER ================= -->
+
+    <section class="menu-filter-section">
+
+
+        <!-- CATEGORIES -->
+
+        <div class="filter-wrapper">
+
+            <div class="filter-scroll">
+
+                <button class="filter-btn active"
+                    data-category="all">
+                    All
+                </button>
+
+                <button class="filter-btn"
+                    data-category="pizza">
+                    Pizza
+                </button>
+
+                <button class="filter-btn"
+                    data-category="burger">
+                    Burger
+                </button>
+
+                <button class="filter-btn"
+                    data-category="pasta">
+                    Pasta
+                </button>
+
+                <button class="filter-btn"
+                    data-category="dessert">
+                    Dessert
+                </button>
+
+                <button class="filter-btn"
+                    data-category="drink">
+                    Drinks
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SEARCH -->
+
+        <div class="search-wrapper">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text"
+                    id="searchInput"
+                    placeholder="Search food...">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- ================= MENU ================= -->
+
+    <section class="menu-section">
+
+        <div class="menu-grid">
+
+
+
+            <!-- ================= PIZZA ================= -->
+
+            <div class="menu-card" data-category="pizza">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070&auto=format&fit=crop">
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+                        <h3>Cheese Burst Pizza</h3>
+                        <span>₹249</span>
+                    </div>
+
+                    <p>Loaded with extra cheese.</p>
+
+                    <button>Add to Cart</button>
+
+                </div>
+            </div>
+
+
+
+            <div class="menu-card" data-category="pizza">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=2081&auto=format&fit=crop">
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+                        <h3>Veg Supreme Pizza</h3>
+                        <span>₹299</span>
+                    </div>
+
+                    <p>Fresh vegetable toppings.</p>
+
+                    <button>Add to Cart</button>
+
+                </div>
+            </div>
+
+
+
+            <div class="menu-card" data-category="pizza">
+                <img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?q=80&w=1974&auto=format&fit=crop">
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+                        <h3>Farmhouse Pizza</h3>
+                        <span>₹349</span>
+                    </div>
+
+                    <p>Farm fresh loaded pizza.</p>
+
+                    <button>Add to Cart</button>
+
+                </div>
+            </div>
+
+
+
+            <div class="menu-card" data-category="pizza">
+                <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=1974&auto=format&fit=crop">
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+                        <h3>Paneer Tikka Pizza</h3>
+                        <span>₹399</span>
+                    </div>
+
+                    <p>Paneer tikka flavour pizza.</p>
+
+                    <button>Add to Cart</button>
+
+                </div>
+            </div>
+
+
+
+            <div class="menu-card" data-category="pizza">
+                <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=1974&auto=format&fit=crop">
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+                        <h3>Margherita Pizza</h3>
+                        <span>₹199</span>
+                    </div>
+
+                    <p>Classic cheese pizza.</p>
+
+                    <button>Add to Cart</button>
+
+                </div>
+            </div>
+
+
+
+
+            <!-- ================= BURGER ================= -->
+
+            <div class="menu-card" data-category="burger">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1999&auto=format&fit=crop">
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+                        <h3>Chicken Burger</h3>
+                        <span>₹189</span>
+                    </div>
+
+                    <p>Crispy chicken burger.</p>
+
+                    <button>Add to Cart</button>
+
+                </div>
+            </div>
+
+
+
+            <div class="menu-card" data-category="burger">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1974&auto=format&fit=crop">
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+                        <h3>Cheese Burger</h3>
+                        <span>₹209</span>
+                    </div>
+
+                    <p>Loaded cheese burger.</p>
+
+                    <button>Add to Cart</button>
+
+                </div>
+            </div>
+
+
+
+            <div class="menu-card" data-category="burger">
+                <img src="https://images.unsplash.com/photo-1586816001966-79b736744398?q=80&w=1974&auto=format&fit=crop">
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+                        <h3>Veg Burger</h3>
+                        <span>₹149</span>
+                    </div>
+
+                    <p>Crunchy veg burger.</p>
+
+                    <button>Add to Cart</button>
+
+                </div>
+            </div>
+
+
+
+            <div class="menu-card" data-category="burger">
+                <img src="https://images.unsplash.com/photo-1610614819513-58e34989848b?q=80&w=1974&auto=format&fit=crop">
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+                        <h3>Double Patty Burger</h3>
+                        <span>₹259</span>
+                    </div>
+
+                    <p>Double layered burger.</p>
+
+                    <button>Add to Cart</button>
+
+                </div>
+            </div>
+
+
+
+
+            <!-- ================= PASTA ================= -->
+
+            <div class="menu-card" data-category="pasta">
+                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=1974&auto=format&fit=crop">
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+                        <h3>White Sauce Pasta</h3>
+                        <span>₹229</span>
+                    </div>
+
+                    <p>Creamy pasta delight.</p>
+
+                    <button>Add to Cart</button>
+
+                </div>
+            </div>
+
+
+
+            <div class="menu-card" data-category="pasta">
+                <img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?q=80&w=1974&auto=format&fit=crop">
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+                        <h3>Red Sauce Pasta</h3>
+                        <span>₹239</span>
+                    </div>
+
+                    <p>Spicy tomato pasta.</p>
+
+                    <button>Add to Cart</button>
+
+                </div>
+            </div>
+
+
+
+            <div class="menu-card" data-category="pasta">
+                <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=1974&auto=format&fit=crop">
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+                        <h3>Italian Pasta</h3>
+                        <span>₹279</span>
+                    </div>
+
+                    <p>Italian herb pasta.</p>
+
+                    <button>Add to Cart</button>
+
+                </div>
+            </div>
+
+
+
+
+            <!-- ================= DESSERT ================= -->
+
+            <div class="menu-card" data-category="dessert">
+                <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=1974&auto=format&fit=crop">
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+                        <h3>Chocolate Cake</h3>
+                        <span>₹149</span>
+                    </div>
+
+                    <p>Soft chocolate dessert.</p>
+
+                    <button>Add to Cart</button>
+
+                </div>
+            </div>
+
+
+
+            <div class="menu-card" data-category="dessert">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=1974&auto=format&fit=crop">
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+                        <h3>Vanilla Ice Cream</h3>
+                        <span>₹99</span>
+                    </div>
+
+                    <p>Classic vanilla ice cream.</p>
+
+                    <button>Add to Cart</button>
+
+                </div>
+            </div>
+
+
+
+
+            <!-- ================= DRINKS ================= -->
+
+            <div class="menu-card" data-category="drink">
+                <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?q=80&w=1974&auto=format&fit=crop">
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+                        <h3>Cold Coffee</h3>
+                        <span>₹129</span>
+                    </div>
+
+                    <p>Chilled coffee drink.</p>
+
+                    <button>Add to Cart</button>
+
+                </div>
+            </div>
+
+
+
+            <div class="menu-card" data-category="drink">
+                <img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?q=80&w=1974&auto=format&fit=crop">
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+                        <h3>Orange Juice</h3>
+                        <span>₹119</span>
+                    </div>
+
+                    <p>Fresh orange juice.</p>
+
+                    <button>Add to Cart</button>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
